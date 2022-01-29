@@ -1,0 +1,126 @@
+.title{
+  background-color: #408f4bc2;
+
+}
+.title h1{
+text-align:center;
+font-weight:700;
+color:rgb(255, 255, 255);
+padding:20px;
+position:relative;
+
+}
+.main{
+text-align:center;
+position:relative;
+left:0px;
+top:75px;
+}
+body {
+background-image: url("https://morphvir.files.wordpress.com/2020/06/great-tamil-movies-of-the-decade-editors-choice-scaled-1.jpg");
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height: 100vh;
+position: relative;
+}
+.container{
+position: fixed;
+top:250px;
+left:30px;
+}
+.button{
+background: #57a762;
+border: 1px solid #8baf07;
+border-radius: 6px;
+box-shadow: rgba(185, 61, 61, 0.233) 1px 2px 4px;
+color: #fafafaf3;
+cursor: pointer;
+font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+font-size: 17px;
+font-weight:700;
+line-height:16px;
+padding:12px;
+text-align:center;
+text-rendering: geometricPrecision;
+touch-action: manipulation;
+vertical-align: middle;
+width:170px;
+height: 45px;
+}
+.button:hover,
+.button:active{
+background-color:#fff;
+background-position: 0 0;
+color:#ff4742;
+
+}
+.button:active {
+opacity: .5;
+background-blend-mode: screen;
+}
+.search-input{
+  background: #fff;
+  width: 30%;
+  height: 60p;
+  max-height: 50px;
+  min-width: 175px;
+  border-radius: 5px;
+  position: absolute;
+  margin-left: 33%;
+  margin-top: 80px;
+  
+}
+
+.search-input input {
+    height: 55px;
+    width : 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0 15px 0 15px;
+    font-size: 18px;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.search-input.active input{
+    border-radius: 5px 5px 0 0;
+    
+}
+
+.search-input .autocom-box{
+  background: #fff;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    max-height: 280px;
+    overflow-y: auto;
+    z-index: 9;
+}
+
+.search-input.active .autocom-box{
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+    z-index: 9;
+}
+
+.autocom-box li{
+    list-style: none;
+    padding: 8px 12px;
+    display: none;
+    width: 100%;
+    cursor: default;
+    border-radius: 3px 3px 3px 3px;
+    z-index: 9;
+}
+
+.search-input.active .autocom-box li{
+    display: block;
+}
+.autocom-box li:hover{
+    background: #725050;
+}
+.movies{
+  margin: 50px 50px 50px 50px;
+}
