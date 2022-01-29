@@ -9,8 +9,7 @@ import poster_url
 import recommendation_system
 import os
 
-app = Flask(__name__,
-template_folder=os.getcwd()+os.path.sep+"template")
+app = Flask(__name__)
 @app.route("/",methods = ['GET','POST'])
 def home():
     return render_template("n.html")
