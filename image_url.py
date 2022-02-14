@@ -24,8 +24,8 @@ class google_image_url:
             query = image name
             n = no of img url
         """""
-        self.search_url = Google_Image+"q="+query
-        response = requests.get(self.search_url,headers = user_agent)
+        self.search_url = self.Google_Image+"q="+query
+        response = requests.get(self.search_url,headers = self.user_agent)
         html = response.text
         soup = BeautifulSoup(html,"html.parser")
         self.output = soup.findAll("img",{"class":"rg_i Q4LuWd"})
