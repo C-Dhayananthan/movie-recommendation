@@ -23,7 +23,7 @@ def get_image():
         recommended_movies = recommender.recommend_movies(movie=entered_movie)
         movie_posters = []
         for re_movie in recommended_movies:
-            links = image_url.google_image_url(n=1,query=re_movie+" tamil movie poster")
+            links = image_url.google_image_url(n=1,query=re_movie+" tamil movie")
             movie_posters.append(links.get_imageurl())
         return render_template("index2.html",
         entered_movie = entered_movie,
