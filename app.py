@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 import poster_url
 import recommendation_system
 import os
+import image_url
 
 app = Flask(__name__)
 @app.route("/",methods = ['GET','POST'])
@@ -22,8 +23,8 @@ def get_image():
         recommended_movies = recommender.recommend_movies(movie=entered_movie)
         movie_posters = []
         for re_movie in recommended_movies:
-            links = poster_url.img_links(no_of_links=1,query=re_movie+" tamil movie poster")
-            movie_posters.append(links.get_url()[0])
+            links = image_url.google_image_url(n=1,query=re_movie+" tamil movie poster")
+            movie_posters.append(links.get_url())
         return render_template("index2.html",
         entered_movie = entered_movie,
         movie1 = recommended_movies[0],
